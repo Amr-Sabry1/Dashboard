@@ -1,0 +1,777 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Josefin+Sans:ital@1&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300&family=Work+Sans:ital,wght@0,200;0,300;0,800;1,200;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+
+</head>
+
+<body>
+    <div class="spiner">
+        <span class="loader"></span>
+    </div>
+    <div class="d-flex">
+        <aside>
+            <a href="./profile.html">
+                <img src="https://img.freepik.com/premium-vector/vector-art-illustration-cyber-cat_379823-3917.jpg?size=338&ext=jpg&ga=GA1.1.282863935.1636452342&semt=sph" class="mainImage rounded-circle pt-2 ms-2" alt="User Photo">
+            </a>
+            <h3 class="pt-2">Phoenix</h3>
+            <nav>
+                <ul class="even-column mt-5">
+                    <a href="../index.html">
+                        <li class="active">
+
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h5>Dashboard</h5>
+                        </li>
+                    </a>
+                    <a href="./setting.html">
+                        <li>
+
+                            <i class="fa-solid fa-sliders"></i>
+                            <h5 class="">Settings</h5>
+
+                        </li>
+
+                    </a>
+                    <a href="./profile.html">
+                        <li>
+
+                            <i class="fa-solid fa-user"></i>
+                            <h5 class="">Profile</h5>
+
+                        </li>
+                    </a>
+                    <a href="./projects.html">
+                        <li>
+
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <h5 class="">Projects</h5>
+
+                        </li>
+                    </a>
+                    <a href="./courses.html">
+                        <li>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h5 class="">Courses</h5>
+
+                        </li>
+                    </a>
+                    <a href="./friends.html">
+                    <li ">
+                        <i class="fa-solid fa-users"></i>
+                        <h5 class="">Friends</h5>
+
+                    </li>
+                </a>
+                    <a href="./files.html">
+                        <li>
+                            <i class="fa-solid fa-file"></i>
+                            <h5 class="">Files</h5>
+
+                        </li>
+                    </a>
+                    <a href="./plans.html">
+                        <li>
+                            <i class="fa-solid fa-map"></i>
+                            <h5 class="">Plans</h5>
+
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="home">
+            <header>
+                <div class="main d-flex justify-content-between align-items-center px-4 py-2">
+                    <input type="text" name="" placeholder="Type Thing" id="">
+                    <div class="icons">
+                        <button id="dark" class="bg-transparent border-0">
+                           <div class="Night d-flex align-items-center">
+                            <!-- <i class="fa fa-moon"></i> -->
+                            <h6 class="mb-1">Drak</h6>
+                            <i class="fa fa-moon ms-1"></i>
+                        </div>
+                         <div class="Light  d-flex align-items-center">
+                            <!-- <i class="fa fa-moon"></i> -->
+                            <h6 class="mb-1">Light</h6>
+                            <i class="fa fa-sun ms-1 text-warning"></i>
+                        </div>
+                        </button>
+
+                        <i class="fa-sharp fa-solid fa-bell fs-3 mx-2 mt-1"></i>
+                        <a href="./profile.html">
+                            <img src="./images/images1.jpg" class="rounded-circle" alt="User Photo">
+                        </a>
+                    </div>
+                </div>
+                <div class="title">
+                    <h4>Dashboard</h4>
+                </div>
+            </header>
+            <section class="content mt-md-5 mt-4  pt-5">
+                <div class="row gy-4 m-md-1 mt-4 pb-5">
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3 pb-5">
+                            <div class="item-text mb-5  d-flex justify-content-between">
+                                <div>
+                                    <h4> <strong>Welcome</strong></h4>
+                                    <p class="mb-0">Phoenix</p>
+                                </div>
+                                <img src="./images/images1.jpg" class="user-photo" alt="User Photo">
+
+                            </div>
+
+
+                            <div class="d-flex justify-content-between mx-md-5 my-5 p-3 py-4 my-md-4  border border-1 border-end-0 border-start-0">
+                                <div class="text-center">
+                                    <h5>Amr Sabry</h5>
+                                    <p>Developer</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5>50</h5>
+                                    <p>Projects</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5>$700</h5>
+                                    <p>Earned</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <button>Profile</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Quickk Draft</strong></h4>
+                                <p class="mb-0">Write A Draft Your Ideas</p>
+                            </div>
+
+                            <div class="item-input mt-2">
+                                <input type="text" placeholder="Title" class="w-100">
+                                <textarea name="" rows="8" id="">Your Thought</textarea>
+                            </div>
+
+                            <div class="d-flex mt-2">
+                                <button>Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3 pb-5">
+                            <div class="mx-2 d-flex justify-content-between">
+                                <div>
+                                    <h4> <strong>Graphic Chart</strong></h4>
+                                    <p class="mb-0">Targets Of The Year</p>
+                                </div>
+                            </div>
+
+                            <div class="inear my-5 position-relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#0099ff" fill-opacity="1" d="M0,46L16,256C32,256,64,256,96,224C128,192,160,128,192,128C224,128,256,192,288,197.3C320,203,352,149,384,149.3C416,149,448,203,480,202.7C512,203,544,149,576,117.3C608,85,640,75,672,74.7C704,75,736,85,768,117.3C800,149,832,203,864,192C896,181,928,107,960,101.3C992,96,1024,160,1056,160C1088,160,1120,96,1152,80C1184,64,1216,96,1248,106.7C1280,117,1312,107,1344,106.7C1376,107,1408,117,1424,122.7L1440,128L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path>
+<!-- -->
+                                <svg class="position-absolute top-0 bottom-0 start-0 end-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#ff3300" fill-opacity="0.8" d="M0,260L102.9,64L205.7,128L308.6,128L411.4,288L514.3,64L617.1,288L720,32L822.9,192L925.7,192L1028.6,288L1131.4,32L1234.3,160L1337.1,192L1440,320L1440,320L1337.1,320L1234.3,320L1131.4,320L1028.6,320L925.7,320L822.9,320L720,320L617.1,320L514.3,320L411.4,320L308.6,320L205.7,320L102.9,320L0,320Z"></path>
+                                </svg>
+                            </div>
+                            <div class="div">
+                                <h5>
+                                    <i class="fa fa-square text-danger me-3"></i>The Red curve
+
+                                </h5>
+                                <h5>
+                                    <i class="fa fa-square text-primary me-3"></i>The Blue curve
+
+                                </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3 pb-5">
+                            <div class="mx-2 d-flex justify-content-between">
+                                <div>
+                                    <h4> <strong>Yearly Targets</strong></h4>
+                                    <p class="mb-0">Targets Of The Year</p>
+                                </div>
+                            </div>
+
+
+                            <div class="mt-5">
+                                <div class="mb-3">
+                                    <h5>Money</h5>
+                                    <p>Developer</p>
+                                    <div class="progress mt-2" style="height: 3px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-title progress-title1">
+                                        75%
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <h5>Projects</h5>
+                                    <p>40</p>
+                                    <div class="progress mt-2" style="height: 3px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-title  progress-title2">
+                                        40%
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <h5>Team</h5>
+                                    <p>18</p>
+                                    <div class="progress mt-2" style="height: 3px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-title  progress-title3">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Tickets Statistics</strong></h4>
+                                <p class="mb-0">Everything About Support Tickets</p>
+                            </div>
+
+
+                            <div class="item-square mt-4">
+
+                                <div class="row tickets">
+                                    <div class="text-center  col-6">
+                                        <div class="p-2 border rounded-3 border-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path  d="M128 192C110.3 192 96 177.7 96 160C96 142.3 110.3 128 128 128C145.7 128 160 142.3 160 160C160 177.7 145.7 192 128 192zM200 160C200 146.7 210.7 136 224 136H448C461.3 136 472 146.7 472 160C472 173.3 461.3 184 448 184H224C210.7 184 200 173.3 200 160zM200 256C200 242.7 210.7 232 224 232H448C461.3 232 472 242.7 472 256C472 269.3 461.3 280 448 280H224C210.7 280 200 269.3 200 256zM200 352C200 338.7 210.7 328 224 328H448C461.3 328 472 338.7 472 352C472 365.3 461.3 376 448 376H224C210.7 376 200 365.3 200 352zM128 224C145.7 224 160 238.3 160 256C160 273.7 145.7 288 128 288C110.3 288 96 273.7 96 256C96 238.3 110.3 224 128 224zM128 384C110.3 384 96 369.7 96 352C96 334.3 110.3 320 128 320C145.7 320 160 334.3 160 352C160 369.7 145.7 384 128 384zM0 96C0 60.65 28.65 32 64 32H512C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H512C520.8 432 528 424.8 528 416V96C528 87.16 520.8 80 512 80H64C55.16 80 48 87.16 48 96z"/></svg>
+                                            <h5>2500</h5>
+                                            <p>Total</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center  col-6">
+                                        <div class="p-2 border rounded-3 border-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path  d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg>
+                                            <h5>500</h5>
+                                            <p>Pending</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center  col-6">
+                                        <div class="p-2 border rounded-3 border-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path  d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+                                            <h5>1900</h5>
+                                            <p>Closed</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center  col-6">
+                                        <div class="p-2 border rounded-3 border-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path  d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                                            <h5>100</h5>
+                                            <p>Deleted</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Latest News</strong></h4>
+                            </div>
+
+
+                            <div class="mt-4">
+                                <div class="d-flex justify-content-between news my-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/news-01.png" class="me-2 rounded-1" alt="">
+                                        <div>
+                                            <h6 class="m-0">Created SASS Section</h6>
+                                            <p>New SASS Examples & Tutorials</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <p>3 Days Ago</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="d-flex justify-content-between news my-4 ">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/news-02.png" class="me-2 rounded-1" alt="">
+                                        <div>
+                                            <h6 class="m-0">Changed The Design</h6>
+                                            <p>A Brand New Website Design</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <p>6 Days Ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between news my-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/news-03.png" class="me-2 rounded-1" alt="">
+                                        <div>
+                                            <h6 class="m-0">Team Increased</h6>
+                                            <p>3 Developers Joined The Team</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <p>8 Days Ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between news my-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/news-04.png" class="me-2 rounded-1" alt="">
+                                        <div>
+                                            <h6 class="m-0">Added Payment Gateway</h6>
+                                            <p>Many New Payment Fateways Added</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <p>9 Days Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Latest Tasks</strong></h4>
+                            </div>
+
+
+                            <div class="mt-4">
+                                <div class="d-flex justify-content-between tasks my-4">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="m-0"><strong>Record One New Video</strong></h6>
+                                                <p>Record Python Create Exe Project</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <i class="fa fa-trash fs-2"></i> </div>
+                                </div>
+                                <div class="d-flex justify-content-between tasks my-4">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="m-0 text-decoration-line-through text-muted">Record One New Video</h6>
+                                                <p class="text-decoration-line-through text-muted">Record Python Create Exe Project</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <i class="fa fa-trash fs-2 text-decoration-line-through text-muted"></i> </div>
+                                </div>
+                                <div class="d-flex justify-content-between tasks my-4">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="m-0"><strong>Record One New Video</strong></h6>
+                                                <p>Record Python Create Exe Project</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <i class="fa fa-trash fs-2"></i> </div>
+                                </div>
+                                <div class="d-flex justify-content-between tasks my-4">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="m-0"><strong>Record One New Video</strong></h6>
+                                                <p>Record Python Create Exe Project</p>
+                                        </div>
+                                    </div>
+                                    <div class="Day-Card">
+
+                                        <i class="fa fa-trash fs-2"></i> </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Top Search Items</strong></h4>
+                            </div>
+
+
+                            <div class="mt-4">
+                                <div class="d-flex justify-content-between  my-4">
+
+                                    <h6 class="m-0">Keyword</h6>
+
+                                    <p>Search Count</p>
+
+                                </div>
+
+                                <div class="d-flex justify-content-between search my-2">
+
+                                    <h6 class="m-0"><strong>JavaScript</strong>
+                                    </h6>
+                                    <div class="Day-Card">
+
+                                        <p>280</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between search my-2">
+
+                                    <h6 class="m-0"><strong>Programming</strong>
+                                    </h6>
+                                    <div class="Day-Card">
+
+                                        <p>240</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between search my-2">
+
+                                    <h6 class="m-0"><strong>PHP</strong>
+                                    </h6>
+                                    <div class="Day-Card">
+
+                                        <p>210</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between search my-2">
+
+                                    <h6 class="m-0"><strong>Code</strong>
+                                    </h6>
+                                    <div class="Day-Card">
+
+                                        <p>150</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between search my-2">
+
+                                    <h6 class="m-0"><strong>Design</strong>
+                                    </h6>
+                                    <div class="Day-Card">
+
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between search my-2">
+
+                                    <h6 class="m-0"><strong>Logic</strong>
+                                    </h6>
+                                    <div class="Day-Card">
+
+                                        <p>30</p>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Latest Upload</strong></h4>
+                            </div>
+
+
+                            <div class="mt-4">
+
+                                <div class="d-flex justify-content-between align-items-center Upload my-1">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/pdf.svg" class="me-md-4 me-2 rounded-1" alt="">
+                                        <h6 class="m-0"><strong class="me-2">my-file.pdf</strong> <span>Poenix</span></h6>
+                                    </div>
+                                    <div class="Day-Card">
+                                        <p>2.8mb</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center Upload my-1">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/avi.svg" class="me-md-4 me-2 rounded-1" alt="">
+                                        <h6 class="m-0"><strong class="me-2">my-file.avi</strong> <span>Poenix</span></h6>
+                                    </div>
+                                    <div class="Day-Card">
+                                        <p>3.8mb</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center Upload my-1">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/psd.svg" class="me-md-4 me-2 rounded-1" alt="">
+                                        <h6 class="m-0"><strong class="me-2">my-file.psd</strong> <span>Poenix</span></h6>
+                                    </div>
+                                    <div class="Day-Card">
+                                        <p>5.8mb</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center Upload my-1">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/zip.svg" class="me-md-4 me-2 rounded-1" alt="">
+                                        <h6 class="m-0"><strong class="me-2">my-file.zip</strong> <span>Poenix</span></h6>
+                                    </div>
+                                    <div class="Day-Card">
+                                        <p>3.8mb</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center Upload my-1">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/dll.svg" class="me-md-4 me-2 rounded-1" alt="">
+                                        <h6 class="m-0"><strong class="me-2">my-file.dll</strong> <span>Poenix</span></h6>
+                                    </div>
+                                    <div class="Day-Card">
+                                        <p>6.8mb</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center Upload my-1">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://dashboard-theme.vercel.app/imgs/eps.svg" class="me-md-4 me-2 rounded-1" alt="">
+                                        <h6 class="m-0"><strong class="me-2">my-file.eps</strong> <span>Poenix</span></h6>
+                                    </div>
+                                    <div class="Day-Card">
+                                        <p>8.8mb</p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3 ">
+                            <div>
+                                <h4> <strong>Latest Projects Progress</strong></h4>
+                            </div>
+
+
+                            <div class="d-flex justify-content-between  mx-md-4 mx-2 mt-4">
+                                <div class="latest-progress-bar ps-3 mt-3">
+                                    <div class="my-4">
+                                        <h6><strong>Got the Project</strong></h6>
+                                    </div>
+                                    <div class="my-4">
+                                        <h6><strong>Started The Project</strong></h6>
+                                    </div>
+                                    <div class="my-4">
+                                        <h6><strong>The Project About To Finish</strong></h6>
+                                    </div>
+                                    <div class="my-4">
+                                        <h6><strong>Test the Project</strong></h6>
+                                    </div>
+                                    <div class="my-4">
+                                        <h5 class="fs-6"><strong>Finish The Project & Get Money</strong></h5>
+                                    </div>
+
+                                </div>
+                                <img src="https://dashboard-theme.vercel.app/imgs/project.png" class="plan" alt="">
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Reminders</strong></h4>
+                            </div>
+
+
+                            <div class="d-flex justify-content-between mt-4">
+                                <div class="reminders ps-4 mt-2">
+                                    <div class="my-3">
+                                        <p><strong>Got the Project</strong></p>
+                                        <p>28/09/2022 - 12:00am</p>
+                                    </div>
+                                    <div class="my-4">
+                                        <p><strong>Got the Project</strong></p>
+                                        <p>28/09/2022 - 12:00am</p>
+                                    </div>
+                                    <div class="my-4">
+                                        <p><strong>Got the Project</strong></p>
+                                        <p>28/09/2022 - 12:00am</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p><strong>Got the Project</strong></p>
+                                        <p>28/09/2022 - 12:00am</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3 pb-5">
+                            <div class="d-flex post align-items-center m-3">
+                                <img src="./images/images1.jpg" class="rounded-circle me-3" alt="User Photo">
+
+                                <div>
+                                    <h5 class="mb-0"> <strong>Amr Sabry</strong></h6>
+                                        <p class="mb-0">About 4 Min Ago</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="d-flex justify-content-between mx-md-3 my-5 p-3 py-4 border border-1 border-end-0 border-start-0 text-muted">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta blanditiis, pariatur cum ad excepturi.</h6>
+
+                            </div>
+                            <div class="d-flex justify-content-between mx-md-5 px-md-5 px-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-heart fs-1 me-md-3 me-1"></i>
+                                    <h4>1.8K</h4>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-message fs-2 me-md-3 me-1"></i>
+                                    <h4>640</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="item p-md-4 p-3">
+                            <div>
+                                <h4> <strong>Latest Upload</strong></h4>
+                            </div>
+
+
+                            <div class="mt-4">
+
+
+
+                                <div class="d-flex justify-content-between align-items-center brands my-3">
+                                    <div class="d-flex align-items-center">
+
+                                        <i class="fa-brands fa-facebook-f  me-2"></i>
+
+                                        <h5 class="m-0"><strong class="me-2">1.7M Like</strong></h5>
+                                    </div>
+                                    <div class="Day-Card me-2">
+                                        <button>Like</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center brands my-3">
+                                    <div class="d-flex align-items-center">
+
+                                        <i class="fa-brands fa-twitter  me-2"></i>
+
+                                        <h5 class="m-0"><strong class="me-2">70K Follower</strong></h5>
+                                    </div>
+                                    <div class="Day-Card me-2">
+                                        <button>Follow</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-50 brands my-3">
+                                    <div class="d-flex align-items-center">
+
+                                        <i class="fa-brands fs-5 fa-youtube text-white bg-danger me-2"></i>
+
+
+                                        <h5 class="m-0"><strong class="me-2">200k Subscriber</strong></h5>
+                                    </div>
+                                    <div class="Day-Card me-2">
+                                        <button class="bg-danger border-danger">Subscribe</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center brands my-3">
+                                    <div class="d-flex align-items-center">
+
+                                        <i class="fa-brands fa-linkedin-in  me-2"></i>
+
+                                        <h5 class="m-0"><strong class="me-2">90k Followers</strong></h5>
+                                    </div>
+                                    <div class="Day-Card me-2">
+                                        <button>Follow</button>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="js/jquery-3.6.1.min.js "></script>
+
+        <script src="js/bootstrap.bundle.min.js "></script>
+        <script src="js/index.js "></script>
+
+</body>

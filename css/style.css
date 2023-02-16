@@ -1,0 +1,1063 @@
+                                                                      :root {
+                                                                         --main-clr: #008FFF;
+                                                                         --black-clr: rgb(28, 28, 28);
+                                                                         --white-clr: rgb(246, 248, 255);
+                                                                         --white-clr2: #f3f3f3;
+                                                                     }
+                                                                     
+                                                                     body {
+                                                                         font-family: 'Montserrat', sans-serif;
+                                                                         background-color: var(--white-clr);
+                                                                     }
+                                                                     
+                                                                     aside ul li {
+                                                                         border: 2px solid rgba(9, 9, 9, 0.099);
+                                                                         display: flex;
+                                                                         align-items: center;
+                                                                         list-style-type: none;
+                                                                         margin: 40px 0;
+                                                                         padding: 8px 10px;
+                                                                         transition: all .3s;
+                                                                         border-radius: 13px;
+                                                                     }
+                                                                     
+                                                                     aside ul li:hover {
+                                                                         color: white;
+                                                                         background-color: var(--main-clr) !important;
+                                                                     }
+                                                                     
+                                                                     .active {
+                                                                         color: white;
+                                                                         background-color: var(--main-clr) !important;
+                                                                     }
+                                                                     
+                                                                     aside i {
+                                                                         font-size: 17px;
+                                                                     }
+                                                                     
+                                                                     aside a {
+                                                                         text-decoration: none;
+                                                                         color: var(--black-clr);
+                                                                     }
+                                                                     
+                                                                     aside a li h5 {
+                                                                         font-weight: bold;
+                                                                         padding-left: 10px;
+                                                                         margin-bottom: 0;
+                                                                         font-size: 14px;
+                                                                     }
+                                                                     
+                                                                     aside ul {
+                                                                         padding: 0;
+                                                                         margin: 10px;
+                                                                     }
+                                                                     
+                                                                     aside h3 {
+                                                                         transform: translate(35px);
+                                                                         font-size: 23px;
+                                                                         position: relative;
+                                                                         width: fit-content;
+                                                                         margin-bottom: 2.5rem;
+                                                                     }
+                                                                     
+                                                                     .mainImage {
+                                                                         width: 40px;
+                                                                         text-align: center;
+                                                                         display: none;
+                                                                     }
+                                                                     
+                                                                     .inear {
+                                                                         width: 90%;
+                                                                         margin: 5%;
+                                                                         border-bottom: 2px solid rgb(139, 139, 139);
+                                                                         border-left: 2px solid rgb(125, 125, 125);
+                                                                     }
+                                                                     
+                                                                     aside h3::after,
+                                                                     aside h3::before {
+                                                                         content: '';
+                                                                         position: absolute;
+                                                                         bottom: -1rem;
+                                                                         left: 0;
+                                                                         background-color: var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     aside h3::after {
+                                                                         height: 2px;
+                                                                         width: 100%;
+                                                                     }
+                                                                     
+                                                                     aside h3::before {
+                                                                         width: 18px;
+                                                                         height: 18px;
+                                                                         border-radius: 50%;
+                                                                         -webkit-border-radius: 50%;
+                                                                         -moz-border-radius: 50%;
+                                                                         -ms-border-radius: 50%;
+                                                                         -o-border-radius: 50%;
+                                                                         bottom: -25px;
+                                                                         left: 50%;
+                                                                         transform: translateX(-50%);
+                                                                         -webkit-transform: translateX(-50%);
+                                                                         -moz-transform: translateX(-50%);
+                                                                         -ms-transform: translateX(-50%);
+                                                                         -o-transform: translateX(-50%);
+                                                                         border: 3.5px solid var(--main-clr);
+                                                                         background-color: white;
+                                                                         z-index: 100;
+                                                                     }
+                                                                     
+                                                                     aside {
+                                                                         border: 2px solid rgba(9, 9, 9, 0.099);
+                                                                         background-color: white;
+                                                                         position: fixed;
+                                                                         top: 0;
+                                                                         bottom: 0;
+                                                                         width: 10%;
+                                                                     }
+                                                                     
+                                                                     .home {
+                                                                         margin-left: auto;
+                                                                         width: 90%;
+                                                                     }
+                                                                     
+                                                                     .Light {
+                                                                         font-size: 20px;
+                                                                         border-radius: 10px;
+                                                                         padding: 2px 15px;
+                                                                         padding-top: 5px;
+                                                                         color: white;
+                                                                         border: 3px solid var(--main-clr);
+                                                                         background-color: var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     .Night {
+                                                                         font-size: 20px;
+                                                                         border-radius: 10px;
+                                                                         padding: 2px 15px;
+                                                                         padding-top: 5px;
+                                                                         color: white;
+                                                                         border: 3px solid black;
+                                                                         background-color: black;
+                                                                     }
+                                                                     
+                                                                     .fa-bell {
+                                                                         color: var(--main-clr);
+                                                                         animation: rotatebell .5s linear infinite;
+                                                                     }
+                                                                     
+                                                                     @keyframes rotatebell {
+                                                                         0% {
+                                                                             transform: rotate(0deg);
+                                                                         }
+                                                                         25% {
+                                                                             transform: rotate(10deg);
+                                                                         }
+                                                                         50% {
+                                                                             transform: rotate(0deg);
+                                                                         }
+                                                                         75% {
+                                                                             transform: rotate(-10deg);
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     header {
+                                                                         z-index: 10000;
+                                                                         width: 90%;
+                                                                         position: fixed;
+                                                                     }
+                                                                     
+                                                                     .main input {
+                                                                         background-color: transparent !important;
+                                                                         border: 1px solid rgb(52, 52, 52);
+                                                                     }
+                                                                     
+                                                                     header input {
+                                                                         border: 2px solid #e6e6e6;
+                                                                         border-radius: 5px;
+                                                                         background-color: rgb(255, 255, 255);
+                                                                         padding: 2px 10px;
+                                                                     }
+                                                                     
+                                                                     .icons {
+                                                                         display: flex;
+                                                                     }
+                                                                     
+                                                                     .icons svg {
+                                                                         margin-right: 10px;
+                                                                         width: 23px;
+                                                                     }
+                                                                     
+                                                                     .icons img {
+                                                                         width: 35px;
+                                                                     }
+                                                                     
+                                                                     header h4 {
+                                                                         font-size: 25px;
+                                                                         position: relative;
+                                                                         padding: 10px;
+                                                                     }
+                                                                     
+                                                                     header .title {
+                                                                         border-bottom: 2px solid rgba(9, 9, 9, 0.099);
+                                                                         border-top: 1px solid rgba(9, 9, 9, 0.051);
+                                                                         background-color: var(--white-clr);
+                                                                         padding-bottom: 1px;
+                                                                     }
+                                                                     
+                                                                     header h4::after,
+                                                                     header h4::before {
+                                                                         content: '';
+                                                                         position: absolute;
+                                                                         bottom: 0;
+                                                                         width: 125px;
+                                                                         left: 10;
+                                                                         border: 1.5px solid rgb(203, 203, 203);
+                                                                         background-color: var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     header h4::before {
+                                                                         width: 40px;
+                                                                         z-index: 100;
+                                                                         border: 1.5px solid var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     .content .row {
+                                                                         margin-left: 0 !important;
+                                                                         margin-right: 0 !important;
+                                                                         margin-bottom: 0 !important;
+                                                                         background-color: var(--white-clr);
+                                                                     }
+                                                                     
+                                                                     .content .row .item {
+                                                                         border: 2px solid rgba(9, 9, 9, 0.099);
+                                                                         background-color: white;
+                                                                         border-radius: 20px;
+                                                                         position: relative;
+                                                                         min-height: 425px;
+                                                                     }
+                                                                     
+                                                                     .item h4 {
+                                                                         font-size: 22px;
+                                                                     }
+                                                                     
+                                                                     .item .item-text {
+                                                                         background-color: #f3f3f3;
+                                                                         padding: 10px 20px;
+                                                                         border-top-right-radius: 20px;
+                                                                         border-top-left-radius: 20px;
+                                                                         padding-bottom: 30px;
+                                                                     }
+                                                                     
+                                                                     .item .user-photo {
+                                                                         position: absolute;
+                                                                         top: 98;
+                                                                         width: 60px;
+                                                                         height: 60px;
+                                                                         border-radius: 50%;
+                                                                         border: 5px solid white;
+                                                                     }
+                                                                     
+                                                                     p {
+                                                                         margin-bottom: 0;
+                                                                     }
+                                                                     
+                                                                     .item button {
+                                                                         margin-left: auto;
+                                                                         background-color: var(--main-clr);
+                                                                         border: 3px solid var(--main-clr);
+                                                                         padding: 1px 10px;
+                                                                         color: white;
+                                                                         font-weight: bold;
+                                                                         border-radius: 5px;
+                                                                     }
+                                                                     
+                                                                     .item-input input,
+                                                                     .item-input textarea {
+                                                                         background-color: var(--white-clr2);
+                                                                         padding: 8px 15px;
+                                                                         margin: 5px;
+                                                                         border: 0;
+                                                                         border-radius: 4px;
+                                                                         color: #7a7b7b;
+                                                                     }
+                                                                     
+                                                                     .progress-title {
+                                                                         padding: 5px;
+                                                                         border-radius: 4px;
+                                                                         color: white;
+                                                                         position: absolute;
+                                                                         z-index: 9;
+                                                                     }
+                                                                     
+                                                                     .progress-title::after {
+                                                                         content: '';
+                                                                         position: absolute;
+                                                                         width: 10px;
+                                                                         height: 10px;
+                                                                         left: 35%;
+                                                                         bottom: -5;
+                                                                         transform: rotate(45deg);
+                                                                     }
+                                                                     
+                                                                     .progress-title1 {
+                                                                         background-color: #008FFF;
+                                                                         left: 70%;
+                                                                         top: 35%;
+                                                                     }
+                                                                     
+                                                                     .progress-title1::after {
+                                                                         background-color: #008FFF;
+                                                                     }
+                                                                     
+                                                                     .progress-title2 {
+                                                                         background-color: #fcb900;
+                                                                         left: 38%;
+                                                                         top: 54%;
+                                                                     }
+                                                                     
+                                                                     .progress-title2::after {
+                                                                         background-color: #fcb900;
+                                                                     }
+                                                                     
+                                                                     .progress-title3 {
+                                                                         background-color: #017917;
+                                                                         left: 57%;
+                                                                         bottom: 19%;
+                                                                     }
+                                                                     
+                                                                     .progress-title3::after {
+                                                                         background-color: #017917;
+                                                                     }
+                                                                     
+                                                                     .item-square svg {
+                                                                         width: 30px;
+                                                                         margin: 10px 0;
+                                                                         fill: var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     .item-square .col-6 {
+                                                                         padding: 10px;
+                                                                     }
+                                                                     
+                                                                     .news img {
+                                                                         width: 90px;
+                                                                     }
+                                                                     
+                                                                     .Day-Card p,
+                                                                     .search p {
+                                                                         background-color: #efefef;
+                                                                         color: black;
+                                                                         padding: 5px 10px;
+                                                                         border-radius: 5px;
+                                                                     }
+                                                                     
+                                                                     .news h6 {
+                                                                         font-size: 17px;
+                                                                         margin: 5px 0px !important;
+                                                                     }
+                                                                     
+                                                                     .Upload img {
+                                                                         width: 35px;
+                                                                         height: 50px;
+                                                                     }
+                                                                     
+                                                                     .Upload h6 {
+                                                                         font-size: 15px;
+                                                                     }
+                                                                     
+                                                                     .latest-progress-bar {
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .plan {
+                                                                         width: 40%;
+                                                                     }
+                                                                     
+                                                                     .latest-progress-bar::before {
+                                                                         width: 8px;
+                                                                         height: 80%;
+                                                                         position: absolute;
+                                                                         top: 25;
+                                                                         left: -7;
+                                                                         content: '';
+                                                                         background-color: #008FFF;
+                                                                     }
+                                                                     
+                                                                     .latest-progress-bar h6,
+                                                                     .latest-progress-bar h5 {
+                                                                         position: relative;
+                                                                         padding-top: 2px !important;
+                                                                     }
+                                                                     
+                                                                     .latest-progress-bar h6::before,
+                                                                     .latest-progress-bar h5::before {
+                                                                         width: 23px;
+                                                                         height: 23px;
+                                                                         position: absolute;
+                                                                         top: 0;
+                                                                         content: '';
+                                                                         border-radius: 50%;
+                                                                         -webkit-border-radius: 50%;
+                                                                         -moz-border-radius: 50%;
+                                                                         -ms-border-radius: 50%;
+                                                                         -o-border-radius: 50%;
+                                                                         bottom: -25px;
+                                                                         left: -19;
+                                                                         transform: translateX(-50%);
+                                                                         -webkit-transform: translateX(-50%);
+                                                                         -moz-transform: translateX(-50%);
+                                                                         -ms-transform: translateX(-50%);
+                                                                         -o-transform: translateX(-50%);
+                                                                         border: 3px solid var(--main-clr);
+                                                                         background-color: rgb(255, 255, 255);
+                                                                         z-index: 100;
+                                                                     }
+                                                                     
+                                                                     .latest-progress-bar h6::after {
+                                                                         width: 13px;
+                                                                         height: 13px;
+                                                                         position: absolute;
+                                                                         top: 5;
+                                                                         content: '';
+                                                                         border-radius: 50%;
+                                                                         -webkit-border-radius: 50%;
+                                                                         -moz-border-radius: 50%;
+                                                                         -ms-border-radius: 50%;
+                                                                         -o-border-radius: 50%;
+                                                                         bottom: -25px;
+                                                                         left: -19;
+                                                                         transform: translateX(-50%);
+                                                                         -webkit-transform: translateX(-50%);
+                                                                         -moz-transform: translateX(-50%);
+                                                                         -ms-transform: translateX(-50%);
+                                                                         -o-transform: translateX(-50%);
+                                                                         border: 3.5px solid var(--main-clr);
+                                                                         background-color: var(--main-clr);
+                                                                         z-index: 100;
+                                                                     }
+                                                                     
+                                                                     .reminders strong,
+                                                                     .reminders p {
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .reminders strong::after {
+                                                                         width: 13px;
+                                                                         height: 13px;
+                                                                         position: absolute;
+                                                                         top: 18;
+                                                                         content: '';
+                                                                         border-radius: 50%;
+                                                                         -webkit-border-radius: 50%;
+                                                                         -moz-border-radius: 50%;
+                                                                         -ms-border-radius: 50%;
+                                                                         -o-border-radius: 50%;
+                                                                         bottom: -25px;
+                                                                         left: -25;
+                                                                         transform: translateX(-50%);
+                                                                         -webkit-transform: translateX(-50%);
+                                                                         -moz-transform: translateX(-50%);
+                                                                         -ms-transform: translateX(-50%);
+                                                                         -o-transform: translateX(-50%);
+                                                                         border: 3.5px solid var(--main-clr);
+                                                                         background-color: var(--main-clr);
+                                                                         z-index: 100;
+                                                                     }
+                                                                     
+                                                                     .reminders p::after {
+                                                                         width: 3px;
+                                                                         height: 30px;
+                                                                         position: absolute;
+                                                                         top: 0;
+                                                                         content: '';
+                                                                         bottom: -25px;
+                                                                         left: -10;
+                                                                         transform: translateX(-50%);
+                                                                         -webkit-transform: translateX(-50%);
+                                                                         -moz-transform: translateX(-50%);
+                                                                         -ms-transform: translateX(-50%);
+                                                                         -o-transform: translateX(-50%);
+                                                                         border: 2px solid rgb(251, 75, 0);
+                                                                         z-index: 100;
+                                                                     }
+                                                                     
+                                                                     .post img {
+                                                                         width: 90px;
+                                                                     }
+                                                                     
+                                                                     .brands {
+                                                                         border-radius: 10px;
+                                                                         background-color: #0091ff3e;
+                                                                     }
+                                                                     
+                                                                     .brands i {
+                                                                         border-bottom-left-radius: 10px;
+                                                                         border-top-left-radius: 10px;
+                                                                         padding: 11px 15px;
+                                                                         color: white;
+                                                                         font-size: 26px;
+                                                                         width: 50px;
+                                                                         background-color: var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     textarea {
+                                                                         width: 100%;
+                                                                     }
+                                                                     /*  profile  */
+                                                                     
+                                                                     .profile-img {
+                                                                         width: 170px;
+                                                                     }
+                                                                     
+                                                                     .level {
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .level::after,
+                                                                     .level::before {
+                                                                         content: '';
+                                                                         position: absolute;
+                                                                         top: 30;
+                                                                         width: 100px;
+                                                                         left: 0;
+                                                                         border: 2px solid rgb(203, 203, 203);
+                                                                         background-color: var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     .level::before {
+                                                                         width: 40px;
+                                                                         z-index: 100;
+                                                                         border: 2px solid var(--main-clr);
+                                                                         animation: widthLevel 1s infinite;
+                                                                     }
+                                                                     
+                                                                     @keyframes widthLevel {
+                                                                         0% {
+                                                                             width: 0%;
+                                                                         }
+                                                                         100% {
+                                                                             width: 70%;
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     .profile p {
+                                                                         font-size: 15px;
+                                                                     }
+                                                                     
+                                                                     .activity img {
+                                                                         width: 50px;
+                                                                     }
+                                                                     
+                                                                     .activity h6 {
+                                                                         font-size: 14px;
+                                                                     }
+                                                                     
+                                                                     .activity h5 {
+                                                                         font-size: 17px;
+                                                                     }
+                                                                     /*  setting  */
+                                                                     
+                                                                     .social-info input {
+                                                                         background-color: transparent !important;
+                                                                         resize: none;
+                                                                         color: black;
+                                                                     }
+                                                                     
+                                                                     .social-info input:focus {
+                                                                         outline: none !important;
+                                                                     }
+                                                                     
+                                                                     .social-info {
+                                                                         margin-top: 10px;
+                                                                         border: 1px solid rgb(187, 185, 185);
+                                                                     }
+                                                                     
+                                                                     .input-icon {
+                                                                         width: 55px;
+                                                                         height: 40px;
+                                                                         display: flex;
+                                                                         align-items: center;
+                                                                         justify-content: center;
+                                                                         font-size: 23px;
+                                                                         color: rgb(146, 146, 146);
+                                                                         border-right: 1px solid rgb(187, 185, 185);
+                                                                     }
+                                                                     
+                                                                     .Checkbokes label {
+                                                                         font-size: 20px;
+                                                                         margin: 6px;
+                                                                     }
+                                                                     
+                                                                     .Checkbokes input {
+                                                                         width: 15px;
+                                                                         height: 15px;
+                                                                     }
+                                                                     
+                                                                     .Day-Card input {
+                                                                         width: 19px;
+                                                                         height: 19px;
+                                                                     }
+                                                                     
+                                                                     .backup-item {
+                                                                         display: flex;
+                                                                         justify-content: center;
+                                                                         align-items: center;
+                                                                         flex-direction: column;
+                                                                         padding: 20px 50px;
+                                                                         border: 2px solid #6e6e6e3e;
+                                                                         border-radius: 10px;
+                                                                     }
+                                                                     
+                                                                     .main {
+                                                                         background-color: white;
+                                                                     }
+                                                                     /*  Projects  */
+                                                                     
+                                                                     .Day-Card div p {
+                                                                         font-size: 15px;
+                                                                     }
+                                                                     
+                                                                     .team img {
+                                                                         width: 37px;
+                                                                         margin-left: -10px;
+                                                                         border-radius: 50%;
+                                                                     }
+                                                                     
+                                                                     .line {
+                                                                         width: 60%;
+                                                                         height: 10px;
+                                                                         border-radius: 10px;
+                                                                         background-color: #9a9a9a3e;
+                                                                     }
+                                                                     
+                                                                     .line-down {
+                                                                         width: 90%;
+                                                                         height: 10px;
+                                                                         border-radius: 10px;
+                                                                         background-color: #008FFF;
+                                                                     }
+                                                                     
+                                                                     .project {
+                                                                         position: relative;
+                                                                         min-height: 300px !important;
+                                                                     }
+                                                                     
+                                                                     .date {
+                                                                         position: absolute;
+                                                                         top: 7;
+                                                                         right: 13;
+                                                                         font-size: 14px;
+                                                                     }
+                                                                     /*  courses  */
+                                                                     
+                                                                     .course {
+                                                                         width: 90%;
+                                                                         max-height: 500px;
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .course-smallimg {
+                                                                         position: absolute;
+                                                                         width: 50px !important;
+                                                                         height: 50px !important;
+                                                                         border: 4px solid var(--main-clr);
+                                                                         border-radius: 50%;
+                                                                         top: 3%;
+                                                                         left: 3%;
+                                                                     }
+                                                                     
+                                                                     .course-bigimg {
+                                                                         width: 100%;
+                                                                         border-top-right-radius: 20px;
+                                                                         border-top-left-radius: 20px;
+                                                                         height: 55%;
+                                                                     }
+                                                                     
+                                                                     .Card-course {
+                                                                         background-color: var(--main-clr);
+                                                                         color: white;
+                                                                         border-radius: 20px;
+                                                                         padding: 2px 8px;
+                                                                         position: absolute;
+                                                                         top: -15;
+                                                                         font-size: 15px;
+                                                                         transform: translate(-50%);
+                                                                         left: 50%;
+                                                                     }
+                                                                     /*  Friends  */
+                                                                     
+                                                                     .friend {
+                                                                         position: relative;
+                                                                     }
+                                                                     
+                                                                     .friend-icon {
+                                                                         position: absolute;
+                                                                         top: 10;
+                                                                         left: 10;
+                                                                         display: flex;
+                                                                     }
+                                                                     
+                                                                     .friend-icon i {
+                                                                         background-color: #9b9b9b3e;
+                                                                         color: var(--main-clr);
+                                                                         padding: 10px;
+                                                                         border-radius: 50%;
+                                                                         text-align: center;
+                                                                         transition: all .5s;
+                                                                     }
+                                                                     
+                                                                     .friend-icon i:hover {
+                                                                         background-color: var(--main-clr);
+                                                                         color: white;
+                                                                     }
+                                                                     
+                                                                     i {
+                                                                         cursor: pointer;
+                                                                     }
+                                                                     
+                                                                     .friend-img {
+                                                                         width: 130px;
+                                                                         height: 130px;
+                                                                         border-radius: 50%;
+                                                                     }
+                                                                     
+                                                                     .Friend-info p {
+                                                                         font-size: 15px;
+                                                                     }
+                                                                     
+                                                                     .friend-mid-div {
+                                                                         border-top: 1px solid rgba(245, 245, 245, 0.421);
+                                                                         border-bottom: 1px solid rgba(245, 245, 245, 0.421);
+                                                                     }
+                                                                     
+                                                                     .friend-mid-div h6 {
+                                                                         font-size: 15px;
+                                                                     }
+                                                                     
+                                                                     .friend-bottom-div {
+                                                                         display: flex;
+                                                                         justify-content: space-between;
+                                                                         align-items: center;
+                                                                     }
+                                                                     
+                                                                     .remove {
+                                                                         background-color: red !important;
+                                                                         border-color: red !important;
+                                                                     }
+                                                                     /*  files  */
+                                                                     
+                                                                     .file-item {
+                                                                         border-radius: 10px;
+                                                                         position: relative;
+                                                                         background-color: white;
+                                                                         max-height: 500px;
+                                                                         padding: 10px;
+                                                                     }
+                                                                     
+                                                                     .file-item p {
+                                                                         font-size: 12px;
+                                                                         padding-left: 5px;
+                                                                     }
+                                                                     
+                                                                     .file-item h6 {
+                                                                         font-size: 15px;
+                                                                     }
+                                                                     
+                                                                     .file-bottom-div {
+                                                                         padding: 10px 5px;
+                                                                         border-top: 1px solid rgba(202, 202, 202, 0.719);
+                                                                         display: flex;
+                                                                         font-size: 13px;
+                                                                         justify-content: space-between;
+                                                                     }
+                                                                     
+                                                                     .file-img {
+                                                                         width: 40px;
+                                                                         transition: all .5s;
+                                                                         margin-bottom: 5px;
+                                                                     }
+                                                                     
+                                                                     .file-img:hover {
+                                                                         transform: scale(1.1);
+                                                                         transform: rotate(10deg);
+                                                                     }
+                                                                     
+                                                                     .file-icon {
+                                                                         position: absolute;
+                                                                         top: 10;
+                                                                         color: rgb(159, 159, 159);
+                                                                         left: 10;
+                                                                     }
+                                                                     
+                                                                     .Statistics>div {
+                                                                         padding: 10px;
+                                                                         border: 1px solid rgba(176, 173, 173, 0.662);
+                                                                         border-radius: 10px;
+                                                                     }
+                                                                     
+                                                                     .Statistics p {
+                                                                         font-size: 14px;
+                                                                     }
+                                                                     
+                                                                     .Statistics h6 {
+                                                                         font-size: 15px;
+                                                                     }
+                                                                     
+                                                                     .Statistics img {
+                                                                         width: 30px;
+                                                                     }
+                                                                     /*  plans  */
+                                                                     
+                                                                     .plans .bg-behind {
+                                                                         padding: 10px;
+                                                                         margin: 10px;
+                                                                         background-color: #22c55e;
+                                                                     }
+                                                                     
+                                                                     .plans .bg-behind2 {
+                                                                         padding: 10px;
+                                                                         margin: 10px;
+                                                                         background-color: var(--main-clr);
+                                                                     }
+                                                                     
+                                                                     .plans .bg-behind3 {
+                                                                         padding: 10px;
+                                                                         margin: 10px;
+                                                                         background-color: yellowgreen;
+                                                                     }
+                                                                     
+                                                                     .plans .bg-success {
+                                                                         padding: 15px;
+                                                                         background-color: #22c55e !important;
+                                                                         border: 5px solid white;
+                                                                         color: white;
+                                                                     }
+                                                                     
+                                                                     .plans .bg-primary {
+                                                                         padding: 15px;
+                                                                         background-color: var(--main-clr) !important;
+                                                                         border: 5px solid white;
+                                                                         color: white;
+                                                                     }
+                                                                     
+                                                                     .plans .bg-warning {
+                                                                         padding: 15px;
+                                                                         background-color: yellowgreen !important;
+                                                                         border: 5px solid white;
+                                                                         color: white;
+                                                                     }
+                                                                     
+                                                                     .fa-check {
+                                                                         font-size: 25px;
+                                                                         font-weight: bold;
+                                                                         color: #22c55e;
+                                                                     }
+                                                                     
+                                                                     .fa-xmark {
+                                                                         font-size: 25px;
+                                                                         font-weight: bold;
+                                                                         color: red;
+                                                                     }
+                                                                     /*  darkTheme  */
+                                                                     
+                                                                     header .titleDark {
+                                                                         background-color: rgb(20, 17, 34);
+                                                                         color: white;
+                                                                         border-bottom: 2px solid rgba(201, 201, 201, 0.026);
+                                                                         border-top: 1px solid rgba(9, 9, 9, 0.051);
+                                                                     }
+                                                                     
+                                                                     .item-dark {
+                                                                         color: white;
+                                                                         background-color: black !important;
+                                                                         color: white !important;
+                                                                         border: 2px solid rgba(255, 255, 255, 0.186) !important;
+                                                                     }
+                                                                     
+                                                                     .input-dark,
+                                                                     .area-dark {
+                                                                         background-color: rgb(53, 53, 53) !important;
+                                                                         color: white !important;
+                                                                     }
+                                                                     
+                                                                     .mainDark {
+                                                                         background-color: black;
+                                                                         border: 2px solid rgba(255, 255, 255, 0.116);
+                                                                     }
+                                                                     
+                                                                     .rowDark {
+                                                                         background-color: rgb(20, 17, 34) !important;
+                                                                     }
+                                                                     
+                                                                     .item-textDark {
+                                                                         background-color: #0976c9cd !important;
+                                                                     }
+                                                                     
+                                                                     .user-photoDark {
+                                                                         border-color: black !important;
+                                                                     }
+                                                                     
+                                                                     .carddark {
+                                                                         background-color: #017917 !important;
+                                                                         color: whitesmoke !important;
+                                                                     }
+                                                                     
+                                                                     .activeDark {
+                                                                         background-color: var(--main-clr) !important;
+                                                                     }
+                                                                     
+                                                                     .tickets {
+                                                                         background-color: transparent !important;
+                                                                     }
+                                                                     /*  media  */
+                                                                     
+                                                                     @media screen and (max-width:600px) {
+                                                                         aside {
+                                                                             width: 15%;
+                                                                         }
+                                                                         .item {
+                                                                             padding: 20px !important;
+                                                                         }
+                                                                         aside a li h5 {
+                                                                             display: none;
+                                                                         }
+                                                                         aside ul li {
+                                                                             border-radius: 10px;
+                                                                             padding: 0 6px;
+                                                                         }
+                                                                         aside i {
+                                                                             padding-right: 0px;
+                                                                             margin: 9px 0;
+                                                                             font-size: 18px;
+                                                                         }
+                                                                         .fa-user {
+                                                                             padding: 0;
+                                                                         }
+                                                                         aside h3 {
+                                                                             display: none;
+                                                                         }
+                                                                         .home {
+                                                                             margin-left: auto;
+                                                                             width: 85% !important;
+                                                                         }
+                                                                         .news img {
+                                                                             padding: 5px 0;
+                                                                         }
+                                                                         .news {
+                                                                             display: block !important;
+                                                                         }
+                                                                         .news h6 {
+                                                                             font-size: 15px;
+                                                                             margin: 0px 0px !important;
+                                                                         }
+                                                                         .news p {
+                                                                             font-size: 13px;
+                                                                         }
+                                                                         .plan {
+                                                                             margin: auto;
+                                                                             height: 100px;
+                                                                         }
+                                                                         .fa-file {
+                                                                             padding-left: 4px;
+                                                                         }
+                                                                         .fa-user {
+                                                                             padding-left: 3px;
+                                                                         }
+                                                                         .mainImage {
+                                                                             display: block;
+                                                                         }
+                                                                         .main input {
+                                                                             width: 50%;
+                                                                         }
+                                                                         .main .icons {
+                                                                             margin-left: auto;
+                                                                         }
+                                                                         .main a {
+                                                                             display: none;
+                                                                         }
+                                                                         .Day-Card div p {
+                                                                             margin: 3px 2px !important;
+                                                                         }
+                                                                         .cources .item {
+                                                                             padding: 10px !important;
+                                                                         }
+                                                                         .course {
+                                                                             width: 100%;
+                                                                         }
+                                                                         .course-smallimg {
+                                                                             top: 40%;
+                                                                             left: 42%;
+                                                                         }
+                                                                         .course-bigimg {
+                                                                             height: 45%;
+                                                                         }
+                                                                         .latest-progress-bar::before {
+                                                                             height: 70%;
+                                                                         }
+                                                                         .activity img {
+                                                                             width: 30px;
+                                                                             height: 30px;
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     .loader {
+                                                                         width: 48px;
+                                                                         height: 48px;
+                                                                         border: 3px dotted #ffffff;
+                                                                         border-style: solid solid dotted dotted;
+                                                                         border-radius: 50%;
+                                                                         display: inline-block;
+                                                                         position: relative;
+                                                                         box-sizing: border-box;
+                                                                         animation: rotation 2s linear infinite;
+                                                                     }
+                                                                     
+                                                                     .loader::after {
+                                                                         content: '';
+                                                                         box-sizing: border-box;
+                                                                         position: absolute;
+                                                                         left: 0;
+                                                                         right: 0;
+                                                                         top: 0;
+                                                                         bottom: 0;
+                                                                         margin: auto;
+                                                                         border: 3px dotted var(--main-clr);
+                                                                         border-style: solid solid dotted;
+                                                                         width: 24px;
+                                                                         height: 24px;
+                                                                         border-radius: 50%;
+                                                                         animation: rotationBack 1s linear infinite;
+                                                                         transform-origin: center center;
+                                                                     }
+                                                                     
+                                                                     @keyframes rotation {
+                                                                         0% {
+                                                                             transform: rotate(0deg);
+                                                                         }
+                                                                         100% {
+                                                                             transform: rotate(360deg);
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     @keyframes rotationBack {
+                                                                         0% {
+                                                                             transform: rotate(0deg);
+                                                                         }
+                                                                         100% {
+                                                                             transform: rotate(-360deg);
+                                                                         }
+                                                                     }
+                                                                     
+                                                                     .spiner {
+                                                                         position: fixed;
+                                                                         bottom: 0;
+                                                                         top: 0;
+                                                                         right: 0;
+                                                                         left: 0;
+                                                                         background-color: #000000d4;
+                                                                         z-index: 999999999;
+                                                                         display: flex;
+                                                                         justify-content: center;
+                                                                         align-items: center;
+                                                                     }
