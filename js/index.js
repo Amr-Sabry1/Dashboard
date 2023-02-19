@@ -64,6 +64,7 @@
       $('aside').addClass('item-dark')
       $('aside li').addClass('item-dark')
       $('.main').addClass('mainDark')
+      $("body").addClass('body-dark')
       $('.row').addClass("rowDark")
       $('.Night').addClass('d-none')
       $('.Day-card p').addClass('carddark')
@@ -73,6 +74,7 @@
   function Light() {
       $('.item').removeClass('item-dark');
       $('.file-item').removeClass('item-dark');
+      $("body").removeClass('body-dark')
 
       $(".item .user-photo").removeClass('user-photoDark')
       $('.item-text').removeClass('item-textDark');
